@@ -21,7 +21,7 @@ Route::get('/', function()
 // @TO DO Do not forget about auth filters for sign up and login pages.. also for logout page -> DONE
 // @TO DO Add login link to signup page and signup link to login page
 // @TO DO Create an basic admin panel.
-// ['admin.index', 'admin.comments'=> ['listComments','validate', 'unvalidate'], 'admin.posts'=> ['']]
+// ['admin.index', 'admin.comments'=> ['listComments','validate', 'unvalidate'], 'admin.posts'=> ['editPost', 'deletePost{id}', 'postsList']]
 
 Route::model('post_id', 'Posts');
 Route::get('posts/id/{post_id}', 'PostsController@singlePost');
